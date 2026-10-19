@@ -295,17 +295,17 @@ docker --version
 docker info
 
 # 2. 테스트 이미지 Pull
-docker pull ghcr.io/popup-jacob/google-workspace-mcp:latest
+docker pull ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest
 docker pull ghcr.io/sooperset/mcp-atlassian:latest
 
 # 3. 이미지 검증
-docker inspect ghcr.io/popup-jacob/google-workspace-mcp:latest \
+docker inspect ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest \
   --format='{{.Config.User}}'  # mcp (non-root)
 
-docker inspect ghcr.io/popup-jacob/google-workspace-mcp:latest \
+docker inspect ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest \
   --format='{{range .Config.Env}}{{println .}}{{end}}'  # NODE_ENV=production
 
-docker images ghcr.io/popup-jacob/google-workspace-mcp:latest \
+docker images ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest \
   --format='{{.Size}}'  # 500MB 이하 확인
 ```
 
@@ -3027,10 +3027,10 @@ it('should save token with mode 0600', () => {
 
 ```bash
 # 컨테이너 내 사용자 확인
-docker run --rm ghcr.io/popup-jacob/google-workspace-mcp:latest id -u
+docker run --rm ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest id -u
 # 기대: 1001 (mcp 사용자, root 아님)
 
-docker run --rm ghcr.io/popup-jacob/google-workspace-mcp:latest whoami
+docker run --rm ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest whoami
 # 기대: mcp
 ```
 

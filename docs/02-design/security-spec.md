@@ -630,7 +630,7 @@ CONFIG_DIR="$HOME/.google-workspace"
 mkdir -p "$CONFIG_DIR"
 chmod 700 "$CONFIG_DIR"
 # Get the mcp user's UID from the Docker image
-MCP_UID=$(docker run --rm ghcr.io/popup-jacob/google-workspace-mcp:latest id -u mcp 2>/dev/null || echo "1000")
+MCP_UID=$(docker run --rm ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest id -u mcp 2>/dev/null || echo "1000")
 # If running on Linux, chown to match container UID
 if [[ "$OSTYPE" != "darwin"* ]]; then
     sudo chown "$MCP_UID:$MCP_UID" "$CONFIG_DIR" 2>/dev/null || true
@@ -880,7 +880,7 @@ if (fs.existsSync(configPath)) {
 
 config.mcpServers['google-workspace'] = {
     command: 'docker',
-    args: ['run', '-i', '--rm', '-v', configDir + ':/app/.google-workspace', 'ghcr.io/popup-jacob/google-workspace-mcp:latest']
+    args: ['run', '-i', '--rm', '-v', configDir + ':/app/.google-workspace', 'ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest']
 };
 
 fs.writeFileSync(configPath, JSON.stringify(config, null, 2), { mode: 0o600 });

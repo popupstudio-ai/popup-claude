@@ -37,12 +37,12 @@ Docker 이미지는 ghcr.io에 호스팅되어 있습니다 (multi-arch: amd64 +
 
 ```bash
 # 이미지 다운로드
-docker pull ghcr.io/popup-jacob/google-workspace-mcp:latest
+docker pull ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest
 
 # 실행
 docker run -i --rm \
   -v "$HOME/.google-workspace:/app/.google-workspace" \
-  ghcr.io/popup-jacob/google-workspace-mcp:latest
+  ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest
 ```
 
 ---
@@ -79,5 +79,5 @@ docker build -t google-workspace-mcp .
 
 ```bash
 docker buildx build --platform linux/amd64,linux/arm64 \
-  -t ghcr.io/popup-jacob/google-workspace-mcp:latest --push .
+  -t ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest --push .
 ```

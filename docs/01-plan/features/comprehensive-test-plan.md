@@ -267,7 +267,7 @@ OS:
 
 #### 3.4.2 Docker 이미지 검증 항목
 
-- [ ] `ghcr.io/popup-jacob/google-workspace-mcp:latest` Pull 가능
+- [ ] `ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest` Pull 가능
 - [ ] `ghcr.io/sooperset/mcp-atlassian:latest` Pull 가능
 - [ ] Google MCP 이미지 크기 확인 (500MB 이하 권장)
 - [ ] 이미지 내 Node.js 22 확인

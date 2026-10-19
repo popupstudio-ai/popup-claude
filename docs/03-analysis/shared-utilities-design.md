@@ -292,7 +292,7 @@ if ! docker_wait_for_start; then
 fi
 
 # Pull image
-docker_pull_image "ghcr.io/popup-jacob/google-workspace-mcp:latest"
+docker_pull_image "ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest"
 ```
 
 ---
@@ -494,7 +494,7 @@ source "$SCRIPT_DIR/../shared/mcp-config.sh"
 echo -e "${YELLOW}[Config] Updating MCP configuration...${NC}"
 mcp_add_docker_server \
     "google-workspace" \
-    "ghcr.io/popup-jacob/google-workspace-mcp:latest" \
+    "ghcr.io/popupstudio-hyeonjinkim/google-workspace-mcp:latest" \
     "-v" "$CONFIG_DIR:/app/.google-workspace"
 
 echo -e "  ${GREEN}OK${NC}"
