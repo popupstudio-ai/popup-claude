@@ -134,15 +134,15 @@ adw/installer/
 **Windows (PowerShell):**
 ```powershell
 # 방법 1: 환경변수로 모듈 전달 (Win+R에서 사용)
-powershell -ep bypass -c "$env:MODULES='google,notion'; irm https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.ps1 | iex"
+powershell -ep bypass -c "$env:MODULES='google,notion'; irm https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.ps1 | iex"
 
 # 방법 2: 파라미터로 전달 (PowerShell 에서 사용)
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.ps1))) -modules 'google,notion'
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.ps1))) -modules 'google,notion'
 ```
 
 **Mac/Linux (Bash):**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.sh | MODULES="google,notion" bash
+curl -fsSL https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.sh | MODULES="google,notion" bash
 ```
 
 ### 2. 메인 스크립트 동작
@@ -237,7 +237,7 @@ Docker가 필요한 모듈 선택 시 2단계 설치 명령어가 표시됩니�
 
 | 항목 | 호스팅 | URL |
 |------|--------|-----|
-| **설치 스크립트** | GitHub Raw | `https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/...` |
+| **설치 스크립트** | GitHub Raw | `https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/...` |
 | **랜딩페이지** | Vercel | `https://ai-driven-work.vercel.app` |
 
 ---

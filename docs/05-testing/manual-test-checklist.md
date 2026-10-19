@@ -26,7 +26,7 @@
 
 | Step | Action | Expected Result | Pass/Fail |
 |------|--------|----------------|-----------|
-| 1 | `curl -fsSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.sh \| bash` | 스크립트 다운로드 및 실행 시작 | |
+| 1 | `curl -fsSL https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.sh \| bash` | 스크립트 다운로드 및 실행 시작 | |
 | 2 | 시스템 요구사항 체크 출력 확인 | RAM >= 8GB, CPU >= 4, Disk >= 10GB 표시 | |
 | 3 | 모듈 목록 표시 확인 | 7개 모듈 (base + 6 optional) 목록 표시 | |
 | 4 | base 모듈만 선택하여 설치 | Node.js, Git, VS Code, Docker, Claude CLI, bkit 설치 완료 | |
@@ -71,7 +71,7 @@
 
 | Step | Action | Expected Result | Pass/Fail |
 |------|--------|----------------|-----------|
-| 1 | PowerShell(관리자)에서 `irm https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.ps1 \| iex` | 스크립트 다운로드 및 실행 | |
+| 1 | PowerShell(관리자)에서 `irm https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.ps1 \| iex` | 스크립트 다운로드 및 실행 | |
 | 2 | 시스템 요구사항 체크 | RAM, CPU, Disk 체크 결과 표시 | |
 | 3 | base 모듈 설치 | Node.js, Git, VS Code, Docker Desktop 설치 | |
 | 4 | `node --version` (새 터미널) | v18+ 출력 | |

@@ -568,7 +568,7 @@ None
 
 - Deployed to: master branch
 - Tag: v1.0.0
-- Release: github.com/popup-jacob/popup-claude/releases/v1.0.0
+- Release: github.com/popupstudio-ai/popup-claude/releases/v1.0.0
 ```
 
 ---
@@ -686,7 +686,7 @@ Do NOT rollback if:
 
 **Product Manager**: bkit PM Agent
 **Technical Lead**: popup-jacob
-**Repository**: https://github.com/popup-jacob/popup-claude
+**Repository**: https://github.com/popupstudio-ai/popup-claude
 
 **Sprint 5 Design Docs**:
 - Design: `/docs/02-design/features/sprint-5-ux-improvements.design.md`

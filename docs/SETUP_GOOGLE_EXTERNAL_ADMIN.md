@@ -29,12 +29,12 @@ installer의 google 모듈이 자동으로 설정을 안내합니다.
 
 **Windows:** `Win + R` 후 실행
 ```powershell
-powershell -ep bypass -c "& ([scriptblock]::Create((irm https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.ps1))) -modules 'google'"
+powershell -ep bypass -c "& ([scriptblock]::Create((irm https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.ps1))) -modules 'google'"
 ```
 
 **Mac/Linux:** 터미널에서 실행
 ```bash
-curl -fsSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.sh | MODULES="google" bash
+curl -fsSL https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.sh | MODULES="google" bash
 ```
 
 실행 후 "Admin" 선택 → "External" 선택 → 안내에 따라 설정 완료.
@@ -148,10 +148,10 @@ curl -fsSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/ins
 2. 아래 설치 명령어를 실행하세요:
 
    Windows: Win+R 누르고 아래 명령어 실행
-   powershell -ep bypass -c "& ([scriptblock]::Create((irm https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.ps1))) -modules 'google'"
+   powershell -ep bypass -c "& ([scriptblock]::Create((irm https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.ps1))) -modules 'google'"
 
    Mac: 터미널에서 아래 명령어 실행
-   curl -fsSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.sh | MODULES="google" bash
+   curl -fsSL https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.sh | MODULES="google" bash
 
 3. Google MCP 설정에서 "Employee" 선택
 4. client_secret.json 파일 위치로 복사

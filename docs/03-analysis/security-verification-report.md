@@ -1,7 +1,7 @@
 # ADW Security Vulnerability Verification Report
 
 > Security Architect | Verified: 2026-02-12
-> Codebase: popup-jacob/popup-claude (master, commit 7b16685)
+> Codebase: popupstudio-ai/popup-claude (master, commit 7b16685)
 > Methodology: Manual code review against OWASP Top 10 (2021)
 
 ---

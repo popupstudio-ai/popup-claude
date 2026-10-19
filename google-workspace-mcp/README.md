@@ -12,12 +12,12 @@ ADW 설치 프로그램을 사용하세요:
 
 **Windows:** `Win + R` 후 실행
 ```
-powershell -ep bypass -c "$env:MODULES='google'; irm https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.ps1 | iex"
+powershell -ep bypass -c "$env:MODULES='google'; irm https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.ps1 | iex"
 ```
 
 **Mac/Linux:** 터미널에서 실행
 ```bash
-curl -fsSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.sh | MODULES="google" bash
+curl -fsSL https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.sh | MODULES="google" bash
 ```
 
 ### 관리자

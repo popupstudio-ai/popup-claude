@@ -13,18 +13,18 @@ https://ai-driven-work.vercel.app
 
 `Win + R` 키를 누르고, 아래 명령어를 붙여넣고 실행:
 ```
-powershell -ep bypass -c "irm https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.ps1 | iex"
+powershell -ep bypass -c "irm https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.ps1 | iex"
 ```
 
 모듈 포함 설치:
 ```
-powershell -ep bypass -c "$env:MODULES='google,notion'; irm https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.ps1 | iex"
+powershell -ep bypass -c "$env:MODULES='google,notion'; irm https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.ps1 | iex"
 ```
 
 ### Windows (Gemini)
 
 ```
-powershell -ep bypass -c "$env:CLI_TYPE='gemini'; irm https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.ps1 | iex"
+powershell -ep bypass -c "$env:CLI_TYPE='gemini'; irm https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.ps1 | iex"
 ```
 
 > **Windows**: Docker가 필요한 모듈(google, atlassian) 선택 시 2단계 설치가 필요합니다. 랜딩페이지에서 자동으로 안내됩니다.
@@ -33,18 +33,18 @@ powershell -ep bypass -c "$env:CLI_TYPE='gemini'; irm https://raw.githubusercont
 
 터미널을 열고 아래 명령어 실행:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.sh | bash
 ```
 
 모듈 포함 설치:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.sh | MODULES="google,notion" bash
+curl -fsSL https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.sh | MODULES="google,notion" bash
 ```
 
 ### Mac/Linux (Gemini)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.sh | CLI_TYPE=gemini bash
+curl -fsSL https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.sh | CLI_TYPE=gemini bash
 ```
 
 ---
@@ -82,12 +82,12 @@ curl -fsSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/ins
 
 **Windows:**
 ```
-powershell -ep bypass -c "irm https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/diagnose.ps1 | iex"
+powershell -ep bypass -c "irm https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/diagnose.ps1 | iex"
 ```
 
 **Mac/Linux:**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/diagnose.sh | bash
+curl -fsSL https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/diagnose.sh | bash
 ```
 
 설치 환경(Node.js, Docker, 권한 등)을 자동으로 점검하고 문제 원인을 알려줍니다.
@@ -127,4 +127,4 @@ popup-claude/
 
 ## 도움이 필요하면
 
-문제가 발생하면 [Issues](https://github.com/popup-jacob/popup-claude/issues)에 문의하세요.
+문제가 발생하면 [Issues](https://github.com/popupstudio-ai/popup-claude/issues)에 문의하세요.

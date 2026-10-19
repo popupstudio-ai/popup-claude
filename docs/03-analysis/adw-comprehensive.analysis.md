@@ -2,7 +2,7 @@
 
 > PDCA Check Phase | 분석일: 2026-02-12
 > 분석팀: CTO Team (8 에이전트 병렬 분석)
-> 대상: popup-jacob/popup-claude (master branch, commit 7b16685)
+> 대상: popupstudio-ai/popup-claude (master branch, commit 7b16685)
 
 ---
 

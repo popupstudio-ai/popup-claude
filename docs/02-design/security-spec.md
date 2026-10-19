@@ -2,7 +2,7 @@
 
 > Security Architect | Created: 2026-02-12 | Updated: 2026-02-12
 > Scope: FR-S1-01 through FR-S1-11 + Input Validation Layer + Credential Storage Architecture + Security Logging
-> Baseline: popup-jacob/popup-claude (master, commit 7b16685)
+> Baseline: popupstudio-ai/popup-claude (master, commit 7b16685)
 > Reference: docs/03-analysis/security-verification-report.md, docs/03-analysis/gap-security-verification.md
 
 ---

@@ -634,7 +634,7 @@ done
 
 | 단계 | 명령어/행동 | 기대 결과 |
 |------|-----------|----------|
-| 1 | `curl -sSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.sh \| bash -s -- --list` | 원격 실행 |
+| 1 | `curl -sSL https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.sh \| bash -s -- --list` | 원격 실행 |
 | 2 | USE_LOCAL 확인 | USE_LOCAL=false |
 | 3 | modules.json 다운로드 확인 | 원격 modules.json에서 모듈 목록 획득 |
 
@@ -951,14 +951,14 @@ export PATH=$PATH_BACKUP
 **검증 명령어**:
 ```bash
 # 수동 검증
-curl -sSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/checksums.json | node -e "
+curl -sSL https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/checksums.json | node -e "
   let d=''; process.stdin.on('data',c=>d+=c); process.stdin.on('end',()=>{
     const c=JSON.parse(d);
     console.log(JSON.stringify(c.files, null, 2));
   })"
 
 # 특정 파일 해시 비교
-curl -sSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/modules/google/install.sh | shasum -a 256
+curl -sSL https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/modules/google/install.sh | shasum -a 256
 ```
 
 **코드 참조**: `install.sh:118-178` -- `download_and_verify()` 함수
@@ -2687,7 +2687,7 @@ gh auth login --hostname github.com --git-protocol https --web
 | 단계 | 행동 | 기대 결과 | 스크린샷 포인트 |
 |------|------|----------|----------------|
 | 1 | 터미널 열기 | | |
-| 2 | `curl -sSL https://raw.githubusercontent.com/popup-jacob/popup-claude/master/installer/install.sh \| bash -s -- --all` | 원격 다운로드 시작 | |
+| 2 | `curl -sSL https://raw.githubusercontent.com/popupstudio-ai/popup-claude/master/installer/install.sh \| bash -s -- --all` | 원격 다운로드 시작 | |
 | 3 | SHA-256 검증 | "Integrity verified" 메시지들 | S1 |
 | 4 | "Current Status:" 표시 | 모든 도구 [ ] (미설치) | S2 |
 | 5 | "Press Enter to start installation" | Enter 입력 | |
