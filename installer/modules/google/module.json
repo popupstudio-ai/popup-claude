@@ -3,7 +3,7 @@
   "displayName": "Google Workspace",
   "description": "Gmail, Calendar, Drive, Docs, Sheets, Slides access for Claude",
   "version": "1.0.0",
-  "author": "popup-jacob",
+  "author": "popupstudio-hyeonjinkim",
   "required": false,
   "order": 6,
 

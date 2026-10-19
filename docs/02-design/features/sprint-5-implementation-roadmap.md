@@ -685,7 +685,7 @@ Do NOT rollback if:
 ## Contact & Support
 
 **Product Manager**: bkit PM Agent
-**Technical Lead**: popup-jacob
+**Technical Lead**: popupstudio-hyeonjinkim
 **Repository**: https://github.com/popupstudio-ai/popup-claude
 
 **Sprint 5 Design Docs**:
